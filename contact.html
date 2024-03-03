@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Registration</title>
+<link
+rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+crossorigin="anonymous"
+/>
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-database-compat.js"></script>
+<style>
+    body {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: #f5f5f5;
+    }
+
+    .form-group {
+      max-width: 330px;
+      padding: 15px;
+      margin: 0 auto;
+    }
+
+    .form-group label {
+      font-weight: bold;
+    }
+
+    .form-group input {
+      height: 40px;
+    }
+
+    .form-group .form-control {
+      padding: 7px 12px;
+      font-size: 14px;
+      line-height: 1.42857143;
+      border-radius: 4px;
+    }
+
+    .form-group button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+    <main>
+    <div class="container">
+        <div class="form-group">
+          <h2 class="text-center">New User Registration</h2>
+          <form id="registrationForm">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                placeholder="Enter first name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  placeholder="Enter last name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="dateOfBirth">Date of Birth</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="dateOfBirth"
+                  placeholder="Enter date of birth"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phoneNumber"
+                  placeholder="Enter phone number"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address"
+                  placeholder="Enter address"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="hospital">Hospital</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="hospital"
+                  placeholder="Enter Hospital Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="Specialisation">Specialisation</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Specialisation"
+                  placeholder="Enter Specialisation"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="UserName">User Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="UserName"
+                  placeholder="Enter User Name"
+                  required
+                />
+                <!--small id="iderror" class="form-text text-muted"/small-->
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Enter Password"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="cpassword">Confirm Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="cpassword"
+                  placeholder="Enter Password"
+                  required
+                />
+                <small id="passwordError" class="form-text text-muted"></small>
+              </div>
+              <button type="submit" id="submit" class="btn btn-primary btn-block">
+                Register
+              </button>
+            </form>
+          </div>
+        </div>
+    </main>
+<script src="contact.js">
+
+// Your Firebase initialization script should go before the script that imports main.js
+</script>
+
+</body>
+</html>

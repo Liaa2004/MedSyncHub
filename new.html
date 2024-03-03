@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Patient Registration Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+ZjE6QbN/FmLvHebvD6FZU58n85V3/" crossorigin="anonymous">
+    <link rel="stylesheet"  href="styles.css" />
+  </head>
+  <body>
+      <h1 class="text-center">Patient Registration Form</h1>
+      <form id="patientForm">
+        <div class="form-group">
+          <label for="fname">Full Name:</label>
+          <input type="text" class="form-control" id="fname" name="fname" required>
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select class="form-control" id="gender" name="gender" required>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" class="form-control" id="age" name="age" required>
+        </div>
+        <div class="form-group">
+            <label for="bgroup">Blood Group:</label>
+            <select class="form-control" id="bgroup" name="bgroup" required>
+              <option value="male">A+ve</option>
+              <option value="female">A-ve</option>
+              <option value="other">O+ve</option>
+              <option value="male">O-ve</option>
+              <option value="female">AB+ve</option>
+              <option value="other">AB-ve</option>
+              <option value="male">B+ve</option>
+              <option value="female">B-ve</option>
+             
+            </select>
+          </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <textarea class="form-control" id="address" name="address" required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" class="form-control" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="Emergency">Emergency Contact Information:</label>
+            <textarea class="form-control" id="Emergency" name="Emergency" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="height">Height(in cm):</label>
+            <input type="number" class="form-control" id="height" name="height" required>
+          </div>
+          <div class="form-group">
+            <label for="weight">Weight(in kg):</label>
+            <input type="number" class="form-control" id="weight" name="weight" required>
+          </div>
+        <div class="form-group">
+          <label for="medicalHistory">Medical History:</label>
+          <textarea class="form-control" id="medicalHistory" name="medicalHistory" required></textarea>
+        </div>
+        <form method="post" enctype="multipart/form-data">
+            <label for="file">Upload Medical Documents:</label>
+            <input id="file" name="file" type="file" />
+            <button>Upload</button>
+            <div class="form-group">
+                <label for="diagnosis">Diagnosis:</label>
+                <textarea class="form-control" id="diagnosis" name="diagnosis" required></textarea>
+              </div>
+              <div class="form-group">
+                <label for="medical">Medicines Prescribed:</label>
+                <textarea class="form-control" id="medical" name="medical" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          
+        
+        
+      </form>
+    </div>
+    <script src="new.js"></script>
+  </body>
+</html>

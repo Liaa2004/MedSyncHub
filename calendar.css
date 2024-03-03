@@ -1,0 +1,38 @@
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1px;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  #calendar div {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  #calendar div:hover {
+    background-color: #ddd;
+  }
+  /* try.css */
+
+/* Adjustments for the calendar */
+#calendar {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Additional styles for the "Add Event" button */
+  #addEvent {
+    margin-top: 20px;
+  }
+  
+  /* Additional styles for the event name and event date inputs */
+  #eventName,
+  #eventDate {
+    margin-top: 10px;
+  }
+  
